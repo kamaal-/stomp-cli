@@ -2,9 +2,9 @@
 (function() {
     var Stomp, net, overTCP, overWS, wrapTCP, wrapWS;
 
-    Stomp = require('./stomp');
+    Stomp = require('./main');
 
-    net = require('net');
+        net = require('net');
 
     Stomp.Stomp.setInterval = function(interval, f) {
         return setInterval(f, interval);
